@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "CalculatorTest" >
+    parallel="classes" thread-count="5"
+    <test name = "test run">
+        <groups>
+            <run>
+                <include name="positive"/>
+                <include name="negative"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="calculatortest"/>
+        </packages>
+    </test>
+
+</suite>
