@@ -13,14 +13,15 @@ public class CalculatorDivTest extends BaseTest{
     public void twoDoubleNumbersDivision(double num1, double num2){
         assertEquals(num1/num2,calculator.div(num1,num2),0.0001,"incorrect result of division");
     }
+    //what exception should i wait here
     @Test(groups = {"negative"}, expectedExceptions = NumberFormatException.class)
     public void cannotDivideByZeroLong() {
         calculator.div(10L,0L);
     }
-    //should throw exception because this is basic math logic?
-    @Test(groups = {"negative"}, expectedExceptions = NumberFormatException.class)
+
+    @Test(groups = {"negative"})
     public void cannotDivideByZeroDouble() {
-        calculator.div(10.0,0.0);
+        assertEquals(calculator.div(10.0,0.0), Double.POSITIVE_INFINITY,"division vy zero should return infinty");
     }
 
 }

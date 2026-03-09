@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name = "CalculatorTest" parallel="classes" thread-count="5">
+<suite name = "CalculatorTest" parallel="classes" thread-count="5" >
     <test name = "test run">
         <groups>
             <run>
